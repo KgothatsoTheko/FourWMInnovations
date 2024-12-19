@@ -1,0 +1,24 @@
+button {
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 40px;
+    font-family: "Poppins";
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 120px !important;
+    height: 60px !important;
+    cursor: pointer;
+}
+
+button:hover{
+    color: white;
+}
+
+button:nth-child(1){
+    background-color: #69f0ae;
+}
+button:nth-child(2):hover{
+    color: #69f0ae;
+}

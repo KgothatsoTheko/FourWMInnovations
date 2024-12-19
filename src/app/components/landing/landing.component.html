@@ -1,0 +1,25 @@
+<div class="flex column border-box pop gap-3em">
+    <mat-toolbar class="flex gap-1em green-bg black wrap fixed">
+        <img src="../../../assets/Logo-removebg-preview (1).png" class="white" alt="logo" height="100%">
+       <span class="example-spacer"></span>
+       <!-- Menu button for smaller screens -->
+        <button mat-icon-button *ngIf="showMenuButton" [matMenuTriggerFor]="menu">
+            <mat-icon>menu</mat-icon>
+        </button>
+       <div class="tool flex gap-3em">
+        <h3 routerLink="./home" routerLinkActive="active">Home</h3>
+       <h3 routerLink="./about" routerLinkActive="active">About</h3>
+       <h3>Projects</h3>
+       <h3>Contact</h3>
+       </div>
+        <!-- Menu for smaller screens -->
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item *ngFor="let item of menuItems">
+            <span routerLink="{{item.link}}" class="item">{{item.label}}</span>
+        </button>
+    </mat-menu>
+    </mat-toolbar>
+    <div class="full-width margin-top-64px">
+        <router-outlet></router-outlet>
+    </div>
+</div>

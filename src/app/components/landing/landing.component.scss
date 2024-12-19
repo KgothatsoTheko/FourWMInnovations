@@ -1,0 +1,28 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .pop {
+    font-family: 'Poppins';
+  }
+
+  .padding-16px {
+    padding: 10%;
+  }
+
+  h3 {
+    font-family: 'Poppins';
+  }
+
+  .tool {
+    margin-right: 15%;
+    cursor: pointer;
+    @media (max-width: 666px) {
+        display: none
+    }
+    
+}
+
+.item:hover {
+    color: #69f0ae;
+}
