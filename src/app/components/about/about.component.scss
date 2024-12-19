@@ -5,3 +5,13 @@ a {
 .card {
     height: 245px;
 }
+
+@media only screen and (max-width: 550px) {
+    .back {
+      flex-direction: column;
+    }
+
+    .ex {
+        width: 100%;
+    }
+  }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -19,6 +20,8 @@ export class HomeComponent implements OnInit {
   currentIndex: number = 0; // Index to keep track of the current word
   currentIndex1: number = 0; // Index to keep track of the current word
 
+  constructor(private router: Router){}
+
   ngOnInit() {
     this.changeWord();
     this.changeImage();
@@ -38,4 +41,13 @@ export class HomeComponent implements OnInit {
       this.currentIndex1 = (this.currentIndex1 + 1) % this.images.length; // Move to the next image, loop back to start
     }, 3000); // Change image every 3 seconds (3000ms)
   }
+
+  goToContact(){
+    this.router.navigate(['/landing/contact'])
+  }
+
+  goToServices(){
+    this.router.navigate(['/landing/services'])
+  }
+
 }
