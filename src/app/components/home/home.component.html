@@ -1,13 +1,13 @@
 <div class=" border-box flex column center-center">
-    <div class="flex gap-05em full-width padding-10px border-box">
-        <div class="flex column space-even half-width">
-            <h2 class="no-margin">We Offer: <span class="green">{{ dynamicWord }}</span></h2>
+    <div class="flex gap-05em full-width padding-10px border-box makeColumn">
+        <div class="flex column space-even half-width makeFull">
+            <h2 class="no-margin">We Offer: <span class="blue">{{ dynamicWord }}</span></h2>
             <img [src]="dynamicImage" alt="logo-image" width="100%">
         </div>
-        <div class="flex column half-width">
-            <img src="../../../assets/Logo-removebg-preview (1).png" alt="imge" width="100%">
+        <div class="flex column half-width makeFull">
+            <img src="../../../assets/newLogo-3.png" alt="imge" width="100%">
             <p class="text-center">
-                At 4WM Innovations, we specialize in providing top-tier solutions in <strong class="green">{{ dynamicWord }}</strong>. Whether you're looking to enhance your web presence, build a custom mobile app, or integrate advanced IT systems, our team is here to help you turn your vision into reality.
+                At 4WM Innovations, we specialize in providing top-tier solutions in <strong class="blue">{{ dynamicWord }}</strong>. Whether you're looking to enhance your web presence, build a custom mobile app, or integrate advanced IT systems, our team is here to help you turn your vision into reality.
             </p>
             <div class="flex gap-1em center-center">
                 <button (click)="goToContact()">

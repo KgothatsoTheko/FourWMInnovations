@@ -1,0 +1,32 @@
+.textpp {
+    font-weight: 600;
+    color: #97abc0;
+}
+
+@media only screen and (max-width: 550px) {
+    .make100p {
+        width: 100%;
+    }
+}
+
+.testimonials-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 1em;
+    padding: 1em;
+  }
+  
+  .testimonial-card {
+    min-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .testimonials-container::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .testimonials-container::-webkit-scrollbar-thumb {
+    background-color: #97abc0;
+    border-radius: 4px;
+  }

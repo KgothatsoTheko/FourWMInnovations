@@ -1,16 +1,27 @@
 <div class="padding-10px border-box flex column center-center full-width">
-    <h3 class="green">Testimonials</h3>
-    <mat-tab-group headerPosition="below" color="accent" class="index-1">
-        <mat-tab label="Mrs. Shirley Nhlengethwa">
-            <div class="padding-5px border-box">
-                <mat-card class="text-center padding-5px border-box green-bg black">
-                    <p>"Amzing work on our mobile application. Always communicated and kept up to date on progress of project to complete. Definetly doing business again in future for updates and new features."</p>
-                    <h4 class="no-margin"><small>Shirley Nhlengethwa</small></h4>
-                    <p class="white no-margin"><small>Focused Network Founder & Chairperson</small></p>
-                </mat-card>
+    <div class="flex wrap gap-1em full-width">
+      <!-- Left side -->
+      <div class="width-47p make100p padding-5px border-box">
+        <div class="round center-center flex column">
+          <p class="textpp">Testimonials</p>
+          <h3 class="no-margin">Our Clients Say</h3>
+          <img src="../../../assets/Customer Survey-pana.svg" alt="review" width="50%">
+        </div>
+      </div>
+  
+      <!-- Right side -->
+      <div class="width-47p make100p padding-5px border-box center-center flex">
+        <div class="testimonials-container">
+          <mat-card class="testimonial-card text-center padding-5px border-box blue-bg black no-relative" *ngFor="let item of testimonials">
+            <div class="full-width center-center flex round">
+              <img mat-card-md-image [src]="item.image" class="no-relative" alt="clients" width="100%">
             </div>
-        </mat-tab>
-        <!-- <mat-tab label="Second"> Content 2 </mat-tab> -->
-        <!-- <mat-tab label="Third"> Content 3 </mat-tab> -->
-    </mat-tab-group>
-</div>
+            <p class="white">"{{item.text}}"</p>
+            <h4 class="no-margin"><small>{{item.name}}</small></h4>
+            <p class="white no-margin"><small>{{item.position}}</small></p>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>
+  

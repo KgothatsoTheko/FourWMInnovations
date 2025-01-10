@@ -8,9 +8,10 @@ body { margin: 0;
 
 //colors
 $white: white;
+$white2: #fafafa;
 $black: black;
 $green: #69f0ae;
-$blue: #2794ff;
+$blue: #0881a3;
 
 // Sizes
 .full-width {
@@ -222,7 +223,7 @@ $blue: #2794ff;
 }
 
 .black {
-    color: $black;
+    color: $black !important;
 }
 
 .green {
@@ -241,6 +242,10 @@ $blue: #2794ff;
     background-color: $white !important;
 }
 
+.it-bg {
+    background-color: $white2 !important;
+}
+
 .black-bg {
     background-color: $black !important;
 }
@@ -257,4 +262,22 @@ $blue: #2794ff;
 
 .mat-mdc-tab .mdc-tab__text-label, .mat-mdc-tab-link .mdc-tab__text-label {
     color: black;
+}
+
+.mat-step-header .mat-step-icon {
+    background-color: rgb(18 18 18 / 70%) !important;
+    color: #fff;
+}
+
+.mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit {
+    background-color: #0881a3 !important;
+    color: #fff;
+}
+
+.mat-step-header .mat-step-label.mat-step-label-active {
+    color: #000000de !important;
+}
+
+.mat-step-header {
+    position: unset !important;
 }

@@ -9,13 +9,13 @@ import { Router } from '@angular/router';
 export class HomeComponent implements OnInit {
   dynamicWord: string = ''; // Holds the current word to display
   dynamicImage: string = ''; // Holds the URL of the current image
-  words: string[] = ['web development', 'mobile development', 'IT consulting', 'software integration', 'IoT']; // Array of words
+  words: string[] = ['web development', 'mobile development', 'IT consulting', 'software integration', 'Internet of Things (IoT)']; // Array of words
   images: any[] = [
-    { one: '../../../assets/Application programming interface-amico.svg' },
-    { two: '../../../assets/Mobile development-amico.svg' },
-    { three: '../../../assets/Programmer-amico.svg' },
-    { four: '../../../assets/Software integration-amico.svg' },
-    { five: '../../../assets/Online world-amico.svg' },
+    { one: '../../../assets/Hand coding-pana.svg' },
+    { two: '../../../assets/Mobile development-bro (1).svg' },
+    { three: '../../../assets/Programmer-amico (1).svg' },
+    { four: '../../../assets/Software integration-pana.svg' },
+    { five: '../../../assets/Online world-amico (1).svg' },
   ]; // Array of image objects
   currentIndex: number = 0; // Index to keep track of the current word
   currentIndex1: number = 0; // Index to keep track of the current word

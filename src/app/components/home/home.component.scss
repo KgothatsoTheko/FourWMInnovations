@@ -17,8 +17,21 @@ button:hover{
 }
 
 button:nth-child(1){
-    background-color: #69f0ae;
+    background-color: #0881a3;
 }
 button:nth-child(2):hover{
-    color: #69f0ae;
+    color: #0881a3;
+}
+
+.makeColumn {
+    @media (max-width: 666px) {
+        flex-direction:column;
+    }
+    
+}
+
+.makeFull {
+    @media (max-width: 666px) {
+        width: 100%;
+    }
 }

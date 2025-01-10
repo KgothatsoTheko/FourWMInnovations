@@ -1,5 +1,18 @@
 a {
-    color: #69f0ae;
+    color: #fff;
+}
+
+.texting {
+    color: #0881a3;
+}
+
+.change {
+    text-decoration: none;
+    color: black;
+}
+
+.change:hover {
+    color: #0881a3;
 }
 
 .card {
@@ -12,6 +25,16 @@ a {
     }
 
     .ex {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .make80p {
+        width: 80%;
+    }
+
+    .make100p {
         width: 100%;
     }
   }

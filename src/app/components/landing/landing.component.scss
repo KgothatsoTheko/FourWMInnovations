@@ -17,12 +17,12 @@
   .tool {
     margin-right: 15%;
     cursor: pointer;
-    @media (max-width: 666px) {
+    @media (max-width: 832px) {
         display: none
     }
     
 }
 
 .item:hover {
-    color: #69f0ae;
+    color: #0881a3;
 }

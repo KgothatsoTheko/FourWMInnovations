@@ -26,7 +26,7 @@ export class LandingComponent implements OnInit{
    }
  
    checkScreenWidth() {
-     this.showMenuButton = window.innerWidth < 666;
+     this.showMenuButton = window.innerWidth < 832;
    }
 
 }

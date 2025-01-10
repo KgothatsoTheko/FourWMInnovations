@@ -1,57 +1,132 @@
-<div class="padding-10px border-box flex column center-center">
-    <h3 class="green">What We Do</h3>
-    <img src="../../../assets/agile method-amico.svg" alt="agile-image" width="50%">
+<div class="padding-10px border-box flex gap-1em column center-center">
+    <h3 class="blue">What We Do</h3>
+    <img src="../../../assets/agile method-amico (1).svg" alt="agile-image" width="50%">
+    <div class="full-width">  
+          <mat-stepper
+            class="example-stepper"
+            [orientation]="(stepperOrientation | async)!">
+            <mat-step label="Plan">
+              <mat-card class="flex column center-center white card padding-5px border-box no-relative">
+                <h3>Planning</h3>
+                <p>In the Agile process, planning is iterative. We break the project into small deliverables called sprints, ensuring that each sprint delivers tangible value. Our team collaborates to understand project goals, prioritize features, and define a roadmap that evolves based on feedback.</p>
+              </mat-card><br>
+                <div>
+                  <button class="black" mat-button matStepperNext>Next</button>
+                </div>
+            </mat-step>
+            <mat-step label="Design">
+                <mat-card class="flex column center-center white card padding-5px border-box no-relative">
+                    <h3>Designing</h3>
+                    <p>The design phase focuses on creating wireframes, prototypes, and user stories that guide development. We prioritize user experience (UX) and ensure the solution is flexible to accommodate changes based on evolving requirements.</p>
+                  </mat-card><br>
+                <div>
+                  <button class="black" mat-button matStepperPrevious>Back</button>
+                  <button class="black" mat-button matStepperNext>Next</button>
+                </div>
+            </mat-step>
+            <mat-step label="Develop">
+                <mat-card class="flex column center-center white card padding-5px border-box no-relative">
+                    <h3>Developing</h3>
+                    <p>Development is done in small, incremental sprints. Our team follows best practices such as test-driven development (TDD), continuous integration (CI), and version control to ensure high-quality code that can be quickly adapted to meet changing requirements.</p>
+                  </mat-card><br>
+                <div>
+                  <button class="black" mat-button matStepperPrevious>Back</button>
+                  <button class="black" mat-button matStepperNext>Next</button>
+                </div>
+            </mat-step>
+            <mat-step label="Test">
+                <mat-card class="flex column center-center white card padding-5px border-box no-relative">
+                    <h3>Testing</h3>
+                    <p>Testing is continuous in Agile. Each sprint includes unit testing, integration testing, and user acceptance testing (UAT) to ensure the product meets both technical and business requirements. Bugs are identified and fixed promptly.</p>
+                  </mat-card><br>
+              <div>
+                <button class="black" mat-button matStepperPrevious>Back</button>
+                <button class="black" mat-button matStepperNext>Next</button>
+              </div>
+            </mat-step>
+            <mat-step label="Deploy">
+                <mat-card class="flex column center-center white card padding-5px border-box no-relative">
+                    <h3>Deploying</h3>
+                    <p>In Agile, deployment is often automated. We use continuous deployment pipelines to ensure new features are delivered to the users frequently, minimizing downtime and allowing for quick feedback loops.</p>
+                  </mat-card><br>
+              <div>
+                <button class="black" mat-button matStepperPrevious>Back</button>
+                <button class="black" mat-button matStepperNext>Next</button>
+              </div>
+            </mat-step>
+            <mat-step label="Review">
+                <mat-card class="flex column center-center white card padding-5px border-box no-relative">
+                    <h3>Reviewing</h3>
+                    <p>At the end of each sprint, we conduct a sprint review and retrospective. This allows stakeholders to provide feedback on the completed work and helps the team improve processes for the next sprint.</p>
+                  </mat-card><br>
+              <div>
+                <button class="black" mat-button matStepperPrevious>Back</button>
+                <button class="black" mat-button matStepperNext>Next</button>
+              </div>
+            </mat-step>
+            <mat-step label="Launch">
+                <mat-card class="flex column center-center white card padding-5px border-box no-relative">
+                    <h3>Launching</h3>
+                    <p>Once the product meets all the requirements and passes testing, it's launched to the end-users. Post-launch, we continue monitoring and gathering feedback to plan the next iterations and improvements.</p>
+                  </mat-card><br>
+              <div>
+                <button class="black" mat-button matStepperPrevious>Back</button>
+                <button class="black" mat-button matStepperNext>Next</button>
+              </div>
+            </mat-step>
+          </mat-stepper>
+    </div>
     <div class="flex wrap gap-1em full-width">
-        <mat-card class="width-47p padding-5px border-box no-relative">
-            <div class="round center-center flex">
-                <img src="../../../assets/Programmer-amico.svg" alt="IT" width="50%">
+        <mat-card class="width-47p make100p blue-bg border-box no-relative">
+            <div class="center-center flex full-width it-bg">
+                <img src="../../../assets/Programmer-amico (1).svg" alt="IT" width="50%">
             </div>
-            <h3 class="white text-center green">IT Consulting</h3>
+            <h3 class="white text-center blue">IT Consulting</h3>
             <p class="white text-center no-margin">
                 <small>Realistic understanding of what user expects, wants and hates about digital products and hardware needed to automate or run business practices.</small>
             </p>
         </mat-card>
-        <mat-card class="width-47p padding-5px border-box no-relative">
-            <div class="round center-center flex">
-                <img src="../../../assets/Mobile development-bro.svg" alt="mobile" width="50%">
+        <mat-card class="width-47p make100p blue-bg border-box no-relative">
+            <div class="full-width it-bg center-center flex">
+                <img src="../../../assets/Mobile development-bro (1).svg" alt="mobile" width="50%">
             </div>
-            <h3 class="white text-center green">Mobile Applications</h3>
+            <h3 class="white text-center blue">Mobile Applications</h3>
             <p class="white text-center no-margin">
                 <small>We specialize in making robust digital products. Whether it be Android or IOS we offer developement and live environement for both.</small>
             </p>
             <div class="flex center-center gap-1em">
-                    <span class="material-symbols-outlined" matTooltip="Android Development">
+                    <span class="material-symbols-outlined pointer" matTooltip="Android Development">
                         android
                     </span>
-                    <span class="material-symbols-outlined" matTooltip="Apple Development">
+                    <span class="material-symbols-outlined pointer" matTooltip="Apple Development">
                         ios
                     </span>
             </div>
         </mat-card>
-        <mat-card class="width-47p padding-5px border-box no-relative">
-            <div class="round center-center flex">
-                <img src="../../../assets/Development-cuate.svg" alt="website" width="50%">
+        <mat-card class="width-47p make100p blue-bg border-box no-relative">
+            <div class="full-width it-bg center-center flex">
+                <img src="../../../assets/Hand coding-pana.svg" alt="website" width="50%">
             </div>
-            <h3 class="white text-center green">Web Applications</h3>
+            <h3 class="white text-center blue">Web Applications</h3>
             <p class="white text-center no-margin">
                 <small>Our developemnt team excels at building high performance products accross all platforms and devices.</small>
             </p>
             <div class="flex center-center gap-1em">
-                    <span class="material-symbols-outlined" matTooltip="Website Development">
+                    <span class="material-symbols-outlined pointer" matTooltip="Website Development">
                         globe
                     </span>
             </div>
         </mat-card>
-        <mat-card class="width-47p padding-5px border-box no-relative">
-            <div class="round center-center flex">
-                <img src="../../../assets/Software integration-amico.svg" alt="mobile" width="50%">
+        <mat-card class="width-47p make100p blue-bg border-box no-relative">
+            <div class="full-width it-bg center-center flex">
+                <img src="../../../assets/Software integration-pana.svg" alt="mobile" width="50%">
             </div>
-            <h3 class="white text-center green">Software Integration</h3>
+            <h3 class="white text-center blue">Software Integration</h3>
             <p class="white text-center no-margin">
                 <small>Providing seamless integration with new digital products into existing software.</small>
             </p>
             <div class="flex center-center gap-1em">
-                <span class="material-symbols-outlined" matTooltip="Software Integration">
+                <span class="material-symbols-outlined pointer" matTooltip="Software Integration">
                     integration_instructions
                 </span>
             </div>

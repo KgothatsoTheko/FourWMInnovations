@@ -1,4 +1,23 @@
 span {
     font-size: 40px !important;
-    color: #69f0ae;
+    color: white;
+}
+
+@media only screen and (max-width: 550px) {
+    .make100p {
+        width: 100%;
+    }
+  }
+
+.example-stepper {
+    margin-top: 8px;
+}
+
+.mat-stepper-horizontal, .mat-stepper-vertical {
+    background-color: #fafafa !important;
+}
+
+.mat-horizontal-content-container {
+    overflow: hidden;
+    padding: 24px; 
 }
