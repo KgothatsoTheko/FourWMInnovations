@@ -217,6 +217,9 @@ $blue: #0881a3;
     box-sizing: border-box;
 }
 
+.unset {
+    position: unset !important;
+}
 // Colors
 .white {
     color: $white !important;
@@ -280,4 +283,11 @@ $blue: #0881a3;
 
 .mat-step-header {
     position: unset !important;
+}
+
+@media only screen and (max-width: 600px){ 
+    .make100w{
+        width: 100%;
+    }
+    
 }
